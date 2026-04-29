@@ -2,10 +2,10 @@
 
 # 𓆩 VELANTRIM EITI 𓆪
 
-**Персональный AI-ассистент с многослойной памятью**
+**Персональный AI-ассистент с многослойной памятью**  
 _Один HTML-файл. Никаких зависимостей. Работает везде._
 
-[![Version](https://img.shields.io/badge/version-12.9.12-gold?style=flat-square)](#)
+[![Version](https://img.shields.io/badge/version-12.9.42-gold?style=flat-square)](#)
 [![Zero Dependencies](https://img.shields.io/badge/dependencies-zero-brightgreen?style=flat-square)](#)
 [![PWA](https://img.shields.io/badge/PWA-ready-blue?style=flat-square)](#)
 [![Offline](https://img.shields.io/badge/offline-supported-orange?style=flat-square)](#)
@@ -30,7 +30,7 @@ _Один HTML-файл. Никаких зависимостей. Работае
 
 ## ⬇️ Скачать локально
 
-**[→ Скачать index.html](https://raw.githubusercontent.com/velantrian/Velantrim-Eiti-2/main/index.html)**
+**[→ Скачать index.html](https://raw.githubusercontent.com/velantrian/Velantrim-Eiti-2/main/index.html)**  
 _(правой кнопкой → Сохранить как)_
 
 Открой скачанный файл в браузере — всё работает без сервера и интернета.
@@ -41,7 +41,7 @@ _(правой кнопкой → Сохранить как)_
 
 VELANTRIM EITI — монолитный AI-ассистент в **одном HTML-файле**. Никакого Node.js, никакого Python, никакого бэкенда.
 
-Внутри — многоуровневая память, reasoning-движок, база знаний, музыкальный плеер, заметки, файловый менеджер, календарь и встроенный Telegram Web.
+Внутри — многоуровневая память, reasoning-движок, база знаний, музыкальный плеер, заметки и файловый менеджер.
 
 ---
 
@@ -49,13 +49,13 @@ VELANTRIM EITI — монолитный AI-ассистент в **одном HT
 
 | | Особенность | Описание |
 |---|---|---|
-| 🧠 | **DAAD FractalMemory** | Трёхуровневая архитектура памяти L0 / L1 / L2 |
+| 🧠 | **DAAD FractalMemory** | Четырёхуровневая архитектура памяти L0 / L1 / L2 / KB |
 | 🔌 | **Zero Dependencies** | Один `.html` файл, никаких установок |
 | 📡 | **PWA + Offline** | Устанавливается как приложение, работает без интернета |
-| 🤖 | **Мульти-провайдер AI** | DeepSeek · Gemini · Grok · OpenRouter · DDG |
+| 🤖 | **Мульти-провайдер AI** | DeepSeek · Gemini · Grok Voice · OpenRouter · DDG |
 | 🔍 | **FTS5 поиск** | Полнотекстовый поиск с BM25 на SQLite WASM |
-| ✈️ | **Telegram Web** | Встроенный таб с web.telegram.org |
 | 🎨 | **Темы** | 10+ тем — скевоморф, стекло, минимализм |
+| 🗣️ | **Grok Voice** | Голосовой режим с поиском и контекстом чата |
 
 ---
 
@@ -71,8 +71,9 @@ VELANTRIM EITI — монолитный AI-ассистент в **одном HT
 │  L1 IDB ── полная история чатов                 │
 │            IndexedDB · лимит ~500 МБ            │
 │                                                 │
-│  L2 digest ── дайджесты длинных сессий          │
+│  L2 digest ── дайджесты прошлых сессий          │
 │               авто-генерация через AI           │
+│               передаётся в Grok Voice           │
 │                                                 │
 │  KB ──────── база знаний · без лимита           │
 │              эпистемические статусы             │
@@ -93,7 +94,7 @@ VELANTRIM EITI — монолитный AI-ассистент в **одном HT
 |---|---|
 | 🤖 **DeepSeek** | Основной ассистент, глубокая интеграция с памятью |
 | ⚡ **Google Gemini** | Быстрые ответы, мультимодальность |
-| 🗣️ **xAI Grok Voice** | Голосовой режим с поиском |
+| 🗣️ **xAI Grok Voice** | Голосовой режим реального времени с историей чатов |
 | 🔀 **OpenRouter** | 300+ моделей (Claude, GPT, Llama, Mistral...) |
 | 🦆 **DuckDuckGo AI** | Бесплатно, без API-ключа |
 | ⛔ **None** | Полностью офлайн, только локальный поиск |
@@ -103,7 +104,7 @@ VELANTRIM EITI — монолитный AI-ассистент в **одном HT
 ## 🧩 MOSC — Reasoning Graph Engine
 
 - 🔗 Строит семантические связи между понятиями
-- 💡 Автоматически обучается из переписки (даже без API)
+- 💡 Автоматически обучается из переписки
 - 🔎 Находит паттерны в знаниях пользователя
 - 📊 Экспортирует граф концептов для анализа
 
@@ -119,7 +120,6 @@ VELANTRIM EITI — монолитный AI-ассистент в **одном HT
 | 📁 **Файлы** | Файловый менеджер, хранение в IndexedDB |
 | 📝 **Заметки** | Markdown-заметки, папки, FTS5-поиск |
 | 📅 **Лента** | Временная лента событий и заметок |
-| ✈️ **Telegram** | Встроенный Telegram Web |
 | ⚙️ **Настройки** | Темы, профиль, API-ключи |
 
 ---
